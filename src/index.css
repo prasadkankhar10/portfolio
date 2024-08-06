@@ -1,4 +1,3 @@
-/* Add this at the beginning of your CSS file if not already added */
 :root {
   --primary-color: #000000;   /* Black */
   --secondary-color: #ffd900; /* Gold */
@@ -8,7 +7,6 @@
   --nav-background-color: #7f7b7b; /* Navigation background color */
 }
 
-/* Example body styling */
 body {
   background-color: var(--background-color);
   color: var(--text-color);
@@ -17,21 +15,19 @@ body {
   overflow-x: hidden;
 }
 
-/* Apply the same background color to all sections/pages */
-section {
-  background-color: var(--background-color);
-  color: var(--text-color);
-  padding: 2em;
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
-/* Example Navigation Bar Styling */
 nav {
   background-color: var(--nav-background-color);
   color: var(--text-color);
   padding: 1em;
 }
 
-/* Other styles to blend the navigation bar buttons */
 nav a {
   color: var(--text-color);
   text-decoration: none;
@@ -41,4 +37,14 @@ nav a {
 nav a:hover {
   background-color: var(--accent-color);
   color: var(--primary-color);
+}
+
+section {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  padding: 2em;
+  min-height: 100vh;
+}
+html {
+  scroll-behavior: smooth;
 }

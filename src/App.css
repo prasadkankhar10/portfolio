@@ -1,38 +1,51 @@
-.App {
-  text-align: center;
+body {
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+  background-color: #7f7a7a; /* Background Color: Dark Grey */
+  color: #f5f5db; /* Text Color: Light Gold */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: transparent; /* Make the background transparent */
+  padding: 1rem;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: space-around;
+  z-index: 1000; /* Ensure it stays above other content */
+}
+
+nav a {
+  color: #f5f5db; /* Accent Color: Light Gold */
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+}
+
+nav a:hover {
+  color: #ffd900; /* Secondary Color: Gold */
+}
+
+.loader-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  background-color: #7f7a7a; /* Match background color */
+  z-index: 9999;
 }
 
-.App-link {
-  color: #61dafb;
+section {
+  padding: 2rem;
+  min-height: 80vh; /* Add this to give height to each section */
+  margin-top: 60px; /* Offset for the fixed navigation bar */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#home, #about, #projects, #skills, #contact {
+  background-color: #7f7a7a; /* Background color for all sections */
 }
