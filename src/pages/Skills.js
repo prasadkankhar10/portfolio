@@ -1,11 +1,8 @@
+// src/pages/Skills.js
 import React from 'react';
 
-function Home() {
-  return (
-    <div className="section">
-      {/* Your Home component content here */}
-    </div>
-  );
+const Skills = () => {
+  return <div id="skills">Skills Page Content</div>;
 }
 
-export default Home;
+export default Skills;

@@ -1,11 +1,8 @@
+// src/pages/Contact.js
 import React from 'react';
 
-function Home() {
-  return (
-    <div className="section">
-      {/* Your Home component content here */}
-    </div>
-  );
+const Contact = () => {
+  return <div id="contact">Contact Page Content</div>;
 }
 
-export default Home;
+export default Contact;

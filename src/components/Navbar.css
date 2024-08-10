@@ -1,0 +1,80 @@
+.header {
+  width: 100%;
+  background-color: transparent; /* Transparent background */
+  position: fixed;
+  top: 0;
+  right: 0; /* Stick to the right side */
+  z-index: 1000;
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 0;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; /* Align items to the right */
+  background-color: transparent; /* Ensure navbar background is transparent */
+}
+
+.nav-toggle {
+  background: none;
+  border: none;
+  color: #040316; /* Color of the toggle icon */
+  font-size: 24px;
+  cursor: pointer;
+  margin-left: auto; /* Align toggle to the right in mobile view */
+}
+
+.nav-menu {
+  display: none;
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  flex-direction: column;
+  align-items: center;
+  background-color: transparent; /* Transparent background for menu */
+}
+
+.nav-menu-visible {
+  display: flex;
+  position: absolute;
+  top: 50px;
+  right: 0; /* Align menu to the right side */
+  background-color: transparent; /* Transparent dropdown */
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.nav-menu li {
+  margin: 10px 0;
+}
+
+.nav-menu img {
+  width: 24px;
+  height: 24px;
+}
+
+/* Desktop view */
+@media (min-width: 768px) {
+  .nav-toggle {
+    display: none;
+  }
+
+  .nav-menu {
+    display: flex;
+    flex-direction: row;
+    position: static;
+    background-color: transparent; /* Transparent background */
+    margin-right: 0; /* Align to the right */
+  }
+
+  .nav-menu li {
+    margin: 0 15px;
+  }
+
+  .nav-menu img {
+    width: 24px;
+    height: 24px;
+  }
+}

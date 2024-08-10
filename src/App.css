@@ -1,51 +1,10 @@
-body {
-  font-family: Arial, sans-serif;
-  overflow-x: hidden;
-  background-color: #7f7a7a; /* Background Color: Dark Grey */
-  color: #f5f5db; /* Text Color: Light Gold */
+.home-section {
+  height: 100vh;
 }
 
-nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: transparent; /* Make the background transparent */
-  padding: 1rem;
-  display: flex;
-  justify-content: space-around;
-  z-index: 1000; /* Ensure it stays above other content */
+.content-section {
+  padding: 100px 20px;
+  min-height: 100vh;
 }
 
-nav a {
-  color: #f5f5db; /* Accent Color: Light Gold */
-  text-decoration: none;
-  padding: 0.5rem 1rem;
-}
-
-nav a:hover {
-  color: #ffd900; /* Secondary Color: Gold */
-}
-
-.loader-container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #7f7a7a; /* Match background color */
-  z-index: 9999;
-}
-
-section {
-  padding: 2rem;
-  min-height: 80vh; /* Add this to give height to each section */
-  margin-top: 60px; /* Offset for the fixed navigation bar */
-}
-
-#home, #about, #projects, #skills, #contact {
-  background-color: #7f7a7a; /* Background color for all sections */
-}
+/* Add other styles for each section as needed */

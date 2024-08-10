@@ -1,36 +1,33 @@
 import React from 'react';
-import Home from './pages/Home';
-import About from './pages/About';
-import Projects from './pages/Projects';
-import Skills from './pages/Skills';
-import Contact from './pages/Contact';
+import Navbar from './components/NavBar';
+import Spline from '@splinetool/react-spline';
 import './App.css';
 
-export default function App() {
+function App() {
   return (
-    <div>
-      <nav>
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
-      </nav>
-      <section id="home">
-        <Home />
+    <div className="App">
+      <Navbar />
+      <section id="home" className="home-section">
+        <Spline scene="https://prod.spline.design/lHGbEzjimbLiSd9S/scene.splinecode" />
       </section>
-      <section id="about">
-        <About />
+      <section id="projects" className="content-section">
+        <h2>Projects</h2>
+        {/* Add your projects content here */}
       </section>
-      <section id="projects">
-        <Projects />
+      <section id="skills" className="content-section">
+        <h2>Skills</h2>
+        {/* Add your skills content here */}
       </section>
-      <section id="skills">
-        <Skills />
+      <section id="about" className="content-section">
+        <h2>About Me</h2>
+        {/* Add your about me content here */}
       </section>
-      <section id="contact">
-        <Contact />
+      <section id="contact" className="content-section">
+        <h2>Contact Me</h2>
+        {/* Add your contact content here */}
       </section>
     </div>
   );
 }
+
+export default App;

@@ -1,11 +1,8 @@
+// src/pages/Projects.js
 import React from 'react';
 
-function Home() {
-  return (
-    <div className="section">
-      {/* Your Home component content here */}
-    </div>
-  );
+const Projects = () => {
+  return <div id="projects">Projects Page Content</div>;
 }
 
-export default Home;
+export default Projects;
