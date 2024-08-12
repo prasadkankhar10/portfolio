@@ -1,10 +1,15 @@
-.home-section {
+.spline-container {
+  position: relative;
+  width: 100%;
   height: 100vh;
+  z-index: 1; /* Ensure this is lower than the summary component */
 }
 
-.content-section {
-  padding: 100px 20px;
-  min-height: 100vh;
+.summary-component {
+  position: absolute;
+  top: 50%; /* Adjust as needed */
+  right: 5%; /* Adjust as needed */
+  max-width: 300px;
+  z-index: 6; /* Higher than the spline object to appear on top */
+  color: #F5F5DC; /* Light Gold */
 }
-
-/* Add other styles for each section as needed */

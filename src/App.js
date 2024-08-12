@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from './components/NavBar';
 import Spline from '@splinetool/react-spline';
+import Summary from './components/Summary';
 import './App.css';
 
 function App() {
@@ -8,7 +9,10 @@ function App() {
     <div className="App">
       <Navbar />
       <section id="home" className="home-section">
-        <Spline scene="https://prod.spline.design/lHGbEzjimbLiSd9S/scene.splinecode" />
+        <div className="spline-container">
+          <Spline scene="https://prod.spline.design/lHGbEzjimbLiSd9S/scene.splinecode" className="spline-object" />
+        </div>
+        <Summary className="summary-component" /> {/* This should overlay the Spline object */}
       </section>
       <section id="projects" className="content-section">
         <h2>Projects</h2>

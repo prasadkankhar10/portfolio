@@ -20,7 +20,7 @@
 .nav-toggle {
   background: none;
   border: none;
-  color: #040316; /* Color of the toggle icon */
+  color: white; /* Color of the toggle icon */
   font-size: 24px;
   cursor: pointer;
   margin-left: auto; /* Align toggle to the right in mobile view */
